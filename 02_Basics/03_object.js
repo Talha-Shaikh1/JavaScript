@@ -45,11 +45,23 @@ const user = [
     },
 ]
 
-console.log(user[1].email);
-console.log(uberUser);
-console.log(Object.keys(uberUser))
-console.log(Object.values(uberUser));
-console.log(Object.entries(uberUser));
-console.log(uberUser.hasOwnProperty('name'));
-console.log(uberUser.hasOwnProperty('id'));
+// console.log(user[1].email);
+// console.log(uberUser);
+// console.log(Object.keys(uberUser))
+// console.log(Object.values(uberUser));
+// console.log(Object.entries(uberUser));
+// console.log(uberUser.hasOwnProperty('name'));
+// console.log(uberUser.hasOwnProperty('id'));
 
+// Object - destructuring
+
+const course = {
+    name: "Pythone",
+    courseinstructor: "Talha",
+    price: 2000
+}
+
+course.courseinstructor
+
+const {courseinstructor: tutor} = course
+console.log(tutor);
